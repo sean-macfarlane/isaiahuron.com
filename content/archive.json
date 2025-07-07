@@ -1,0 +1,27 @@
+[
+  {
+    "type": "image",
+    "src": "/compressed/47940007-b&w.webp",
+    "caption": ""
+  },
+  {
+    "type": "image",
+    "src": "/compressed/47940016 - b&w.webp",
+    "caption": ""
+  },
+  {
+    "type": "image",
+    "src": "/compressed/47960008.webp",
+    "caption": ""
+  },
+  {
+    "type": "video",
+    "src": "https://www.youtube.com/embed/c42cLVMHUB4",
+    "caption": ""
+  },
+  {
+    "type": "video",
+    "src": "https://www.youtube.com/embed/0SJMYeAfCvk",
+    "caption": ""
+  }
+]

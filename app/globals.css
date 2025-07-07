@@ -38,10 +38,11 @@
 
 html {
   min-width: 360px;
+  font-family: 'Inter', sans-serif;
 }
 
 .prose {
-  @apply text-[#000000] dark:text-[#FFFFFF];
+  @apply text-[#000000] dark:text-[#FFFFFF] font-sans;
 }
 
 .prose .anchor {

@@ -1,4 +1,6 @@
 {
+  "name": "isaia-huron-site",
+  "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -10,6 +12,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "feed": "^5.1.0",
+    "framer-motion": "^12.23.0",
     "katex": "^0.16.22",
     "next": "^15.3.4",
     "next-mdx-remote": "^5.0.0",
@@ -17,6 +20,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
     "react-tweet": "^3.2.2",
     "react-wrap-balancer": "^1.1.1",
     "react-youtube": "^10.1.0",

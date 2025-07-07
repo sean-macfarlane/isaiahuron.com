@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  FaXTwitter,
-  FaGithub,
-  FaInstagram,
-  FaRss,
-  FaLinkedinIn,
-} from "react-icons/fa6";
-import { TbMailFilled } from "react-icons/tb";
+import { FaXTwitter, FaInstagram, FaTiktok } from "react-icons/fa6";
 import { metaData, socialLinks } from "app/lib/config";
 
 const YEAR = new Date().getFullYear();
@@ -23,31 +16,18 @@ function SocialLink({ href, icon: Icon }) {
 
 function SocialLinks() {
   return (
-    <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
+    <div className="flex text-lg gap-3.5 transition-opacity duration-300 hover:opacity-90">
       <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
-      <SocialLink href={socialLinks.github} icon={FaGithub} />
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
-      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
-      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <a href="/rss.xml" target="_self">
-        <FaRss />
-      </a>
+      <SocialLink href={socialLinks.tiktok} icon={FaTiktok} />
     </div>
   );
 }
 
 export default function Footer() {
   return (
-    <small className="block lg:mt-24 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
-      <time>© {YEAR}</time>{" "}
-      <a
-        className="no-underline"
-        href={socialLinks.twitter}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {metaData.title}
-      </a>
+    <small className="block text-center lg:mt-4 mt-4 mb-4 text-[#1C1C1C]">
+      <time>© {YEAR} </time> {metaData.title}
       <style jsx>{`
         @media screen and (max-width: 480px) {
           article {
@@ -56,7 +36,6 @@ export default function Footer() {
           }
         }
       `}</style>
-      <SocialLinks />
     </small>
   );
 }

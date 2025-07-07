@@ -1,16 +1,14 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
-  title: "Nextfolio",
-  name: "Sirius",
+  baseUrl: "https://isaiahuron.com/",
+  title: 'Isaia Huron',
+  name: 'Isaia Huron',
+  description: 'Official site of Isaia Huron',
   ogImage: "/opengraph-image.png",
-  description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
 };
 
 export const socialLinks = {
-  twitter: "https://x.com/1tssirius",
-  github: "https://github.com/1msirius/Nextfolio",
+  twitter: "https://x.com/",
+  tiktok: "https://www.tiktok.com/",
   instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
   email: "mailto:example@gmail.com",
 };

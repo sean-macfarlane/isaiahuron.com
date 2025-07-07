@@ -18,9 +18,22 @@ export default function Page() {
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  useEffect(() => {
+    // Set --vh to the actual viewport height in px for mobile browsers
+    const setVh = () => {
+      document.documentElement.style.setProperty(
+        "--vh",
+        `${window.innerHeight * 0.01}px`
+      );
+    };
+    setVh();
+    window.addEventListener("resize", setVh);
+    return () => window.removeEventListener("resize", setVh);
+  }, []);
+
   return (
     <div>
-      <main className="relative h-screen w-screen">
+      <main className="relative fullscreen-safe">
         <Image
           src="/compressed/hero.webp"
           alt="Isaia Huron"
@@ -30,7 +43,9 @@ export default function Page() {
         />
         {/* Desktop Nav */}
         <motion.nav
-          className={`fixed left-0 right-0 bottom-0 mb-6 w-full justify-evenly text-sm md:text-lg font-bold tracking-wide z-30 hidden md:flex transition-colors duration-300 ${navDark ? 'text-black' : 'text-white'}`}
+          className={`fixed left-0 right-0 bottom-10 w-full justify-evenly text-sm md:text-lg font-bold tracking-wide z-30 hidden md:flex transition-colors duration-300 ${
+            navDark ? "text-black" : "text-white"
+          }`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -72,7 +87,7 @@ export default function Page() {
         <AnimatePresence>
           {menuOpen && (
             <motion.div
-              className="fixed inset-0 flex flex-col items-center justify-center z-30 md:hidden"
+              className="absolute inset-0 flex flex-col items-center justify-center z-30 md:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -338,7 +353,7 @@ export default function Page() {
           DOLOR SIT AMET, CONSECTETUR DJJD ADIPISCING ELIT, SED DO EIUSMOD
           TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM
           SUSPENDISSE GRAVIDA.`}
-            className="text-5xl sm:text-6xl md:text-7xl font-black leading-tight tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6 text-left"
           />
         </div>
         <motion.form

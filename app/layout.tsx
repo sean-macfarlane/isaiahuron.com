@@ -95,7 +95,6 @@ Website created by fulldigitalll.com
       </head>
       <body>
         {children}
-        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>

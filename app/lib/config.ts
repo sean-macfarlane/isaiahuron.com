@@ -7,8 +7,10 @@ export const metaData = {
 };
 
 export const socialLinks = {
-  twitter: "https://x.com/",
-  tiktok: "https://www.tiktok.com/",
-  instagram: "https://www.instagram.com/",
-  email: "mailto:example@gmail.com",
+  twitter: "http://x.com/isaiahuron",
+  tiktok: "https://www.tiktok.com/@isaiahuron",
+  instagram: "https://www.instagram.com/isaiahuron",
+  youtube: "https://www.youtube.com/@IsaiaHuron/videos",
+  facebook: "https://www.facebook.com/isaiahuronofficial",
+  soundcloud: "https://soundcloud.com/isaiahuron",
 };

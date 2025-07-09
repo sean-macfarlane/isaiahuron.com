@@ -1,22 +1,16 @@
-import Link from "next/link";
+import BackLink from "../components/BackLink";
 import Image from "next/image";
-import { formatDate, getBlogPosts } from "app/lib/posts";
 import archiveData from "content/archive.json";
 
 export const metadata = {
   title: "Archive",
-  description: "",
+  description: "An archive of various media by Isaia Huron",
 };
 
 export default function BlogPosts() {
   return (
     <div className="bg-white text-black min-h-screen p-6">
-      <Link
-        href="/"
-        className="fixed top-4 left-4 z-50 px-4 py-2 bg-white text-sm rounded-full border border-black-1/10 text-black hover:bg-white transition-colors"
-      >
-        BACK
-      </Link>
+      <BackLink />
       <h1 className="mb-8 text-2xl font-medium text-center">ARCHIVE</h1>
       <div className="max-w-3xl mx-auto space-y-10">
         {archiveData.map((item, index) => (

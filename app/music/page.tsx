@@ -2,6 +2,13 @@ import BackLink from "../components/BackLink";
 import Image from "next/image";
 import archiveData from "content/music.json";
 
+type ArchiveItem = {
+  type: string;
+  src: string;
+  caption?: string;
+  link?: string;
+};
+
 export const metadata = {
   title: "Music",
   description: "A collection of music by Isaia Huron",
@@ -13,16 +20,44 @@ export default function Music() {
       <BackLink />
       <h1 className="mb-8 text-2xl font-medium text-center">MUSIC</h1>
       <div className="max-w-3xl mx-auto space-y-10">
-        {archiveData.map((item, index) => (
+        {(archiveData as ArchiveItem[]).map((item, index) => (
           <div key={index} className="w-full space-y-2">
             {item.type === "image" ? (
-              <Image
-                src={item.src}
-                alt={item.caption || "Archive image"}
-                width={1200}
-                height={800}
-                style={{ width: "100%", height: "auto" }}
-              />
+              <div className="relative group w-full">
+                {item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={item.src}
+                      alt={item.caption || "Archive image"}
+                      width={1200}
+                      height={800}
+                      style={{ width: "100%", height: "auto" }}
+                      className="block w-full h-auto"
+                    />
+                    {item.caption && (
+                      <span className="absolute uppercase inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/50 text-white text-lg font-medium px-4 text-center">
+                        {item.caption}
+                      </span>
+                    )}
+                  </a>
+                ) : (
+                  <>
+                    <Image
+                      src={item.src}
+                      alt={item.caption || "Archive image"}
+                      width={1200}
+                      height={800}
+                      style={{ width: "100%", height: "auto" }}
+                      className="block w-full h-auto"
+                    />
+                    {item.caption && (
+                      <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/50 text-white text-lg font-medium px-4 text-center">
+                        {item.caption}
+                      </span>
+                    )}
+                  </>
+                )}
+              </div>
             ) : (
               <div className="aspect-video">
                 <iframe
@@ -33,9 +68,6 @@ export default function Music() {
                   className="w-full h-full"
                 ></iframe>
               </div>
-            )}
-            {item.caption && (
-              <p className="text-sm text-gray-600">{item.caption}</p>
             )}
           </div>
         ))}

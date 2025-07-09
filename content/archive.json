@@ -1,27 +1,28 @@
 [
-  {
-    "type": "image",
-    "src": "/compressed/47940007-b&w.webp",
-    "caption": ""
-  },
-  {
-    "type": "image",
-    "src": "/compressed/47940016 - b&w.webp",
-    "caption": ""
-  },
-  {
-    "type": "image",
-    "src": "/compressed/47960008.webp",
-    "caption": ""
-  },
-  {
-    "type": "video",
-    "src": "https://www.youtube.com/embed/c42cLVMHUB4",
-    "caption": ""
-  },
-  {
-    "type": "video",
-    "src": "https://www.youtube.com/embed/0SJMYeAfCvk",
-    "caption": ""
-  }
+  { "type": "image", "src": "/compressed/47940007-b&w.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/47940016 - b&w.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/47960008.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/47980002-bw.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/47980011.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/48340010.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/IMG_0841.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/IMG_7189.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/IMG_7543.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/IMG_8703.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/IMG_8706.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/img20250611_20434938.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/img20250612_14323605_scanned.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/ISAIA - Cartoon 2.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/Isaia polaroids_.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/Isaia_Hero_6.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/Isaia_Retouched_Chalk_b&w.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/Isaia_Retouched_Sitting_B&W.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/New Poster 1x1.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/PNG image.webp", "caption": "" },
+  { "type": "video", "src": "https://www.youtube.com/embed/c42cLVMHUB4", "caption": "List Crawler - Music Video" },
+  { "type": "video", "src": "https://www.youtube.com/embed/0SJMYeAfCvk", "caption": "Burning Blue Cover" },
+  { "type": "video", "src": "https://www.youtube.com/embed/rBKNrCuefxs", "caption": "On the Road: Sir Woman Tour" },
+  { "type": "video", "src": "https://www.youtube.com/embed/DcGPtDGzfP8", "caption": "Bell" },
+  { "type": "video", "src": "https://www.youtube.com/embed/Qc1H6Gknyd0", "caption": "Circle" },
+  { "type": "video", "src": "https://www.youtube.com/embed/HyQU5zE1_XE", "caption": "Libbie 02 (Short Film)" }
 ]

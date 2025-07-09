@@ -34,9 +34,9 @@ export default function BlogPosts() {
                 ></iframe>
               </div>
             )}
-            {item.caption && (
+            {/* {item.caption && (
               <p className="text-sm text-gray-600">{item.caption}</p>
-            )}
+            )} */}
           </div>
         ))}
       </div>

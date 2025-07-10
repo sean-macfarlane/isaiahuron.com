@@ -1,5 +1,7 @@
 [
   { "type": "image", "src": "/compressed/hero.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/Isaia_Retouched_Chalk_b&w.webp", "caption": "" },
+  { "type": "image", "src": "/compressed/New Poster 1x1.webp", "caption": "" },
   { "type": "video", "src": "https://www.youtube.com/embed/c42cLVMHUB4", "caption": "List Crawler - Music Video" },
   { "type": "image", "src": "/compressed/archive1.webp", "caption": "" },
   { "type": "image", "src": "/compressed/archive2.webp", "caption": "" },
@@ -19,8 +21,6 @@
   { "type": "video", "src": "https://www.youtube.com/embed/HyQU5zE1_XE", "caption": "Libbie 02 (Short Film)" },
   { "type": "image", "src": "/compressed/Isaia polaroids_.webp", "caption": "" },
   { "type": "image", "src": "/compressed/Isaia_Hero_6.webp", "caption": "" },
-  { "type": "image", "src": "/compressed/Isaia_Retouched_Chalk_b&w.webp", "caption": "" },
   { "type": "image", "src": "/compressed/Isaia_Retouched_Sitting_B&W.webp", "caption": "" },
-  { "type": "image", "src": "/compressed/New Poster 1x1.webp", "caption": "" },
   { "type": "image", "src": "/compressed/PNG image.webp", "caption": "" }
 ]

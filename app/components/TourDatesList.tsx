@@ -8,7 +8,6 @@ type TourDate = {
 };
 
 export default function TourDatesList({ dates = [] }: { dates: TourDate[] }) {
-    console.log("TourDatesList rendered with dates:", dates);
   return (
     <motion.ul
       className="space-y-4 text-xl"

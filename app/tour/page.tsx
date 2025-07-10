@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import NavMenu from "app/components/NavMenu";
 import { motion } from "framer-motion";
 import TourDatesList from "../components/TourDatesList";
@@ -8,14 +9,30 @@ export default function TourPage() {
     <main className="relative fullscreen-safe">
       <motion.section
         id="tour"
-        className="relative h-screen w-screen bg-white text-black py-16 px-6 text-center"
+        className="relative h-screen w-screen bg-white text-black py-4 md:py-16 px-6 text-center justify-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+        >
+          <Image
+            src="/compressed/tour.webp"
+            alt="Isaia Huron"
+            priority
+            width={800}
+            height={1200}
+            className="h-[60vh] w-auto max-h-full"
+          />
+        </motion.div>
         <motion.h2
-          className="text-3xl font-semibold mb-8"
+          className="text-3xl font-semibold my-2 md:my-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}

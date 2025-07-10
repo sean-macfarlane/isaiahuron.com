@@ -17,10 +17,25 @@ export default function ContactPage() {
       >
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6 text-left">
           <TypewriterText
-            text={`\n          SOME COPY ABOUT ISAIA HURON + CONTACT INFORMATION. LOREM IPSUM HD\n          DOLOR SIT AMET, CONSECTETUR DJJD ADIPISCING ELIT, SED DO EIUSMOD\n          TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM\n          SUSPENDISSE GRAVIDA.`}
+            text={[
+              `ISAIA HURON IS A BROOKLYN-BASED ARTIST AND EXECUTIVE PRODUCER. CONCUBAINIA IS PART ONE OF A THREE-ACT STORY—A WORLD BUILT ON LUST, LOSS, AND ESCAPE. KNOWN FOR HIS RAW INTENSITY AND EMOTIONAL PRECISION, ISAIA CREATES MUSIC THAT FEELS BOTH INTIMATE AND CINEMATIC.
+              FOR INQUIRIES: `,
+              <a href="mailto:music@speakslang.com" className="underline">
+                music@speakslang.com
+              </a>,
+            ]}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6 text-left"
           />
         </div>
+        <motion.div className="flex justify-center gap-5 pb-6">
+          {/* <motion.h2 className="text-xl font-black">
+            FOR INQUIRIES:{" "}
+            <a href="mailto:music@speakslang.com" className="underline">
+              music@speakslang.com
+            </a>
+          </motion.h2> */}
+          <motion.h2 className="text-2xl">+1 (864) 740-8049</motion.h2>
+        </motion.div>
         <motion.div className="flex justify-center gap-5 pb-6">
           <SocialLinks />
         </motion.div>
@@ -28,7 +43,7 @@ export default function ContactPage() {
           <iframe
             src="https://laylo.com/isaiahuron/profile/embed?theme=light"
             width="100%"
-            height="580"
+            height="200"
             frameBorder="0"
             scrolling="no"
           ></iframe>

@@ -9,7 +9,7 @@ export default function TourPage() {
     <main className="relative fullscreen-safe">
       <motion.section
         id="tour"
-        className="relative h-screen w-screen bg-white text-black py-4 md:py-16 px-6 text-center justify-center"
+        className="relative h-screen w-screen bg-white text-black py-4 md:py-16 px-6 text-center justify-center pb-16"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -32,7 +32,7 @@ export default function TourPage() {
           />
         </motion.div>
         <motion.h2
-          className="text-3xl font-semibold my-2 md:my-8"
+          className="text-3xl font-semibold my-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}

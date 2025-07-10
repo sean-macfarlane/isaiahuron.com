@@ -15,7 +15,7 @@ export default function ContactPage() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, delay: 0.3 }}
       >
-        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6 text-left">
+        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6 text-left">
           <TypewriterText
             text={[
               `ISAIA HURON IS A BROOKLYN-BASED ARTIST AND EXECUTIVE PRODUCER. CONCUBAINIA IS PART ONE OF A THREE-ACT STORY—A WORLD BUILT ON LUST, LOSS, AND ESCAPE. KNOWN FOR HIS RAW INTENSITY AND EMOTIONAL PRECISION, ISAIA CREATES MUSIC THAT FEELS BOTH INTIMATE AND CINEMATIC.
@@ -24,7 +24,7 @@ export default function ContactPage() {
                 music@speakslang.com
               </a>,
             ]}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6 text-left"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6 text-left"
           />
         </div>
         <motion.div className="flex justify-center gap-5 pb-6">
@@ -39,7 +39,7 @@ export default function ContactPage() {
         <motion.div className="flex justify-center gap-5 pb-6">
           <SocialLinks />
         </motion.div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto pb-16">
           <iframe
             src="https://laylo.com/isaiahuron/profile/embed?theme=light"
             width="100%"

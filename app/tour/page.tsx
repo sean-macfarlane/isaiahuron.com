@@ -28,7 +28,7 @@ export default function TourPage() {
             priority
             width={800}
             height={1200}
-            className="h-[60vh] w-auto max-h-full"
+            className="h-[50vh] md:h-[60vh] w-auto max-h-full"
           />
         </motion.div>
         <motion.h2

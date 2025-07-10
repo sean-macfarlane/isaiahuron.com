@@ -11,7 +11,7 @@ export default function Page() {
           <SocialLinks />
         </div>
         <Image
-          src="/compressed/home.webp"
+          src="/home.jpeg"
           alt="Isaia Huron"
           fill
           style={{ objectFit: "cover" }}

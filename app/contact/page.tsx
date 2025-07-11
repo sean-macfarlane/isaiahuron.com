@@ -18,23 +18,21 @@ export default function ContactPage() {
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6 text-left">
           <TypewriterText
             text={[
-              `ISAIA HURON IS A BROOKLYN-BASED ARTIST AND EXECUTIVE PRODUCER. CONCUBAINIA IS PART ONE OF A THREE-ACT STORY—A WORLD BUILT ON LUST, LOSS, AND ESCAPE. KNOWN FOR HIS RAW INTENSITY AND EMOTIONAL PRECISION, ISAIA CREATES MUSIC THAT FEELS BOTH INTIMATE AND CINEMATIC.
-              FOR INQUIRIES: `,
-              <a href="mailto:music@speakslang.com" className="underline">
-                music@speakslang.com
-              </a>,
+              `ISAIA HURON IS A BROOKLYN-BASED ARTIST AND EXECUTIVE PRODUCER. CONCUBAINIA IS PART ONE OF A THREE-ACT STORY—A WORLD BUILT ON LUST, LOSS, AND ESCAPE. KNOWN FOR HIS RAW INTENSITY AND EMOTIONAL PRECISION, ISAIA CREATES MUSIC THAT FEELS BOTH INTIMATE AND CINEMATIC.`,
             ]}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6 text-left"
           />
         </div>
-        <motion.div className="flex justify-center gap-5 pb-6">
-          {/* <motion.h2 className="text-xl font-black">
+        <motion.div className="block justify-center gap-5 pb-6 sm:flex">
+          <motion.h2 className="text-xl font-black">
             FOR INQUIRIES:{" "}
             <a href="mailto:music@speakslang.com" className="underline">
               music@speakslang.com
             </a>
-          </motion.h2> */}
-          <motion.h2 className="text-2xl">+1 (864) 740-8049</motion.h2>
+          </motion.h2>
+          <motion.h2 className="text-xl font-black">
+            TEXT ISAIA: <a href="tel:+18647408049" className="underline">+1 (864) 740-8049</a>
+          </motion.h2>
         </motion.div>
         <motion.div className="flex justify-center gap-5 pb-6">
           <SocialLinks />

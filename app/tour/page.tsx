@@ -6,7 +6,7 @@ import TourDatesList from "../components/TourDatesList";
 
 export default function TourPage() {
   return (
-    <main className="relative fullscreen-safe">
+    <main className="relative fullscreen-safe mb-24">
       <motion.section
         id="tour"
         className="relative h-screen w-screen bg-white text-black py-4 md:py-16 px-6 text-center justify-center pb-16"
@@ -49,6 +49,7 @@ export default function TourPage() {
                 "https://www.eventbrite.com/e/backyard-sessions-curated-by-wnxp-samara-cyn-tim-gent-isaia-huron-tickets-1334503689459",
             },
             { date: "August 26", location: "The Echo @ Los Angeles, CA" },
+            { date: "September 10", location: "Baby's All Right @ New York, NY" },
           ]}
         />
       </motion.section>

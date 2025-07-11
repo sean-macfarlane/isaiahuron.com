@@ -10,8 +10,8 @@ export default function NavMenu({ dark = false }) {
     <>
       {/* Desktop Nav */}
       <motion.nav
-        className={`fixed left-0 right-0 bottom-10 w-full justify-evenly text-sm md:text-lg font-bold tracking-wide z-30 hidden md:flex transition-colors duration-300 ${
-          dark ? "text-black" : "text-white"
+        className={`fixed left-0 right-0 bottom-0 pb-10 w-full justify-evenly text-sm md:text-lg font-bold tracking-wide z-30 hidden md:flex transition-colors duration-300 ${
+          dark ? "text-black bg-white"  : "text-white"
         }`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function NavMenu({ dark = false }) {
       {/* Burger Icon for Mobile */}
       {!menuOpen && (
         <motion.button
-          className="fixed left-1/2 -translate-x-1/2 bottom-6 z-30 flex flex-col justify-center items-center md:hidden w-10 h-10"
+          className={`fixed left-1/2 -translate-x-1/2 bottom-6 z-30 flex flex-col justify-center items-center md:hidden w-10 h-10 ${dark ? "bg-white" : ""}`}
           aria-label="Open menu"
           onClick={() => setMenuOpen(true)}
           initial={{ opacity: 0, y: 20 }}
@@ -144,7 +144,7 @@ export default function NavMenu({ dark = false }) {
             </motion.nav>
             {/* Burger Icon for closing */}
             <motion.button
-              className="fixed left-1/2 -translate-x-1/2 bottom-6 z-40 flex flex-col justify-center items-center md:hidden w-10 h-10"
+              className={`fixed left-1/2 -translate-x-1/2 bottom-6 z-40 flex flex-col justify-center items-center md:hidden w-10 h-10 ${dark ? "bg-white" : ""}`}
               aria-label="Close menu"
               onClick={() => setMenuOpen(false)}
               initial={{ opacity: 0, y: 20 }}

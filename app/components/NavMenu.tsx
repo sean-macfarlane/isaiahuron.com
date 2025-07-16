@@ -21,7 +21,7 @@ export default function NavMenu({ dark = false }) {
           TOUR
         </Link>
         <a
-          href="https://shopify-url.com"
+          href="https://1dij4c-6w.myshopify.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"

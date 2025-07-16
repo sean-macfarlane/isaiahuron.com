@@ -3,6 +3,8 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
+const SHOPIFY_URL = "https://shop.isaiahuron.com";
+
 export default function NavMenu({ dark = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,7 +13,7 @@ export default function NavMenu({ dark = false }) {
       {/* Desktop Nav */}
       <motion.nav
         className={`fixed left-0 right-0 bottom-0 pb-10 w-full justify-evenly text-sm md:text-lg font-bold tracking-wide z-30 hidden md:flex transition-colors duration-300 ${
-          dark ? "text-black bg-white"  : "text-white"
+          dark ? "text-black bg-white" : "text-white"
         }`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,7 +23,7 @@ export default function NavMenu({ dark = false }) {
           TOUR
         </Link>
         <a
-          href="https://shop.isaiahuron.com/"
+          href={SHOPIFY_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
@@ -41,16 +43,30 @@ export default function NavMenu({ dark = false }) {
       {/* Burger Icon for Mobile */}
       {!menuOpen && (
         <motion.button
-          className={`fixed left-1/2 -translate-x-1/2 bottom-6 z-30 flex flex-col justify-center items-center md:hidden w-10 h-10 ${dark ? "bg-white" : ""}`}
+          className={`fixed left-1/2 -translate-x-1/2 bottom-6 z-30 flex flex-col justify-center items-center md:hidden w-10 h-10 ${
+            dark ? "bg-white" : ""
+          }`}
           aria-label="Open menu"
           onClick={() => setMenuOpen(true)}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className={`block w-7 h-0.5 ${dark ? "bg-black" : "bg-white"} mb-1.5 transition-all duration-300`}></span>
-          <span className={`block w-7 h-0.5 ${dark ? "bg-black" : "bg-white"} mb-1.5 transition-all duration-300`}></span>
-          <span className={`block w-7 h-0.5 ${dark ? "bg-black" : "bg-white"} transition-all duration-300`}></span>
+          <span
+            className={`block w-7 h-0.5 ${
+              dark ? "bg-black" : "bg-white"
+            } mb-1.5 transition-all duration-300`}
+          ></span>
+          <span
+            className={`block w-7 h-0.5 ${
+              dark ? "bg-black" : "bg-white"
+            } mb-1.5 transition-all duration-300`}
+          ></span>
+          <span
+            className={`block w-7 h-0.5 ${
+              dark ? "bg-black" : "bg-white"
+            } transition-all duration-300`}
+          ></span>
         </motion.button>
       )}
       {/* Mobile Menu Overlay */}
@@ -64,7 +80,9 @@ export default function NavMenu({ dark = false }) {
             transition={{ duration: 0.3 }}
           >
             <motion.nav
-              className={`flex flex-col h-full w-full justify-evenly items-center text-2xl font-bold text-center  ${dark ? "text-black bg-white" : "text-white"}`}
+              className={`flex flex-col h-full w-full justify-evenly items-center text-2xl font-bold text-center  ${
+                dark ? "text-black bg-white" : "text-white"
+              }`}
               initial="closed"
               animate="open"
               exit="closed"
@@ -93,7 +111,7 @@ export default function NavMenu({ dark = false }) {
                 transition={{ delay: 0.2 }}
               >
                 <a
-                  href="https://shopify-url.com"
+                  href={SHOPIFY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -144,7 +162,9 @@ export default function NavMenu({ dark = false }) {
             </motion.nav>
             {/* Burger Icon for closing */}
             <motion.button
-              className={`fixed left-1/2 -translate-x-1/2 bottom-6 z-40 flex flex-col justify-center items-center md:hidden w-10 h-10 ${dark ? "bg-white" : ""}`}
+              className={`fixed left-1/2 -translate-x-1/2 bottom-6 z-40 flex flex-col justify-center items-center md:hidden w-10 h-10 ${
+                dark ? "bg-white" : ""
+              }`}
               aria-label="Close menu"
               onClick={() => setMenuOpen(false)}
               initial={{ opacity: 0, y: 20 }}
@@ -153,13 +173,19 @@ export default function NavMenu({ dark = false }) {
               transition={{ duration: 0.3, delay: 0.1 }}
             >
               <span
-                className={`block w-7 h-0.5 ${dark ? "bg-black" : "bg-white"} mb-1.5 transition-all duration-300 rotate-45 translate-y-2`}
+                className={`block w-7 h-0.5 ${
+                  dark ? "bg-black" : "bg-white"
+                } mb-1.5 transition-all duration-300 rotate-45 translate-y-2`}
               ></span>
               <span
-                className={`block w-7 h-0.5 ${dark ? "bg-black" : "bg-white"} mb-1.5 transition-all duration-300 opacity-0`}
+                className={`block w-7 h-0.5 ${
+                  dark ? "bg-black" : "bg-white"
+                } mb-1.5 transition-all duration-300 opacity-0`}
               ></span>
               <span
-                className={`block w-7 h-0.5 ${dark ? "bg-black" : "bg-white"} transition-all duration-300 -rotate-45 -translate-y-2`}
+                className={`block w-7 h-0.5 ${
+                  dark ? "bg-black" : "bg-white"
+                } transition-all duration-300 -rotate-45 -translate-y-2`}
               ></span>
             </motion.button>
           </motion.div>

@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaX } from 'react-icons/fa6';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaX } from "react-icons/fa6";
 
 export default function ProductPopup() {
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState<any>();
   const [isOpen, setIsOpen] = useState(false);
 
-  const PRODUCT_ID = 'gid://shopify/Product/15072149111153';
-  const STORE_DOMAIN = 'fatbeats.myshopify.com';
-  const ACCESS_TOKEN = 'ad92fa42b0f37aa3cb9bedb228fe7146';
+  const PRODUCT_ID = "gid://shopify/Product/15072149111153";
+  const STORE_DOMAIN = "fatbeats.myshopify.com";
+  const ACCESS_TOKEN = "ad92fa42b0f37aa3cb9bedb228fe7146";
 
   // Show on first visit only
   useEffect(() => {
@@ -39,17 +39,17 @@ export default function ProductPopup() {
     `;
 
     fetch(`https://${STORE_DOMAIN}/api/2023-10/graphql.json`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'X-Shopify-Storefront-Access-Token': ACCESS_TOKEN,
+        "Content-Type": "application/json",
+        "X-Shopify-Storefront-Access-Token": ACCESS_TOKEN,
       },
       body: JSON.stringify({ query }),
     })
       .then((res) => res.json())
       .then((res) => {
         if (res.data?.product) {
-          setProduct(res.data.product);
+          setProduct(res.data.product || {});
         }
       })
       .catch(console.error);
@@ -60,7 +60,7 @@ export default function ProductPopup() {
 
   // Handle background click to close
   const handleOverlayClick = (e) => {
-    if (e.target.id === 'popup-overlay') {
+    if (e.target.id === "popup-overlay") {
       setIsOpen(false);
     }
   };
@@ -89,7 +89,7 @@ export default function ProductPopup() {
             initial={{ y: 40, opacity: 0, scale: 0.95 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: 40, opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className="bg-white max-w-md w-full p-6 rounded-lg shadow-xl relative text-center z-[55]"
           >
             {image && (

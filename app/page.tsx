@@ -2,6 +2,7 @@
 import Image from "next/image";
 import NavMenu from "./components/NavMenu";
 import SocialLinks from "./components/SocialLinks";
+import ProductPopup from "./components/ProductPopup";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
           style={{ objectFit: "cover" }}
           priority
         />
+        <ProductPopup />
         <NavMenu />
       </main>
     </div>

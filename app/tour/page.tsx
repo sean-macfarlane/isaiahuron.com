@@ -48,8 +48,18 @@ export default function TourPage() {
               ticketsUrl:
                 "https://www.eventbrite.com/e/backyard-sessions-curated-by-wnxp-samara-cyn-tim-gent-isaia-huron-tickets-1334503689459",
             },
-            { date: "August 26", location: "The Echo @ Los Angeles, CA" },
-            { date: "September 10", location: "Baby's All Right @ New York, NY" },
+            {
+              date: "August 26",
+              location: "The Echo @ Los Angeles, CA",
+              ticketsUrl:
+                "https://www.ticketmaster.com/isaia-huron-los-angeles-california-08-26-2025/event/090062E7C6112BB6?_gl=1*kiq9cw*_gcl_aw*R0NMLjE3NTIwMTM0NzMuQ2p3S0NBandnN1BEQmhCeEVpd0FmMUNWdTVXaFp1NGlFLTlzV1Njdl9oMk9udFVNcUdkcU00VmFJZ3l4Z0s3WTNsY0J2SDRYY3c1YTF4b0MzMndRQXZEX0J3RQ..*_gcl_dc*R0NMLjE3NTIwMTM0NzMuQ2p3S0NBandnN1BEQmhCeEVpd0FmMUNWdTVXaFp1NGlFLTlzV1Njdl9oMk9udFVNcUdkcU00VmFJZ3l4Z0s3WTNsY0J2SDRYY3c1YTF4b0MzMndRQXZEX0J3RQ..*_gcl_au*MTY1MDA4MjIwMS4xNzUyMDEzNDcz*_ga*MTAwOTAyMTcyMi4xNzUyMDEzNDcz*_ga_H1KKSGW33X*czE3NTI3ODY5NDYkbzIkZzAkdDE3NTI3ODY5NDYkajYwJGwwJGgw*_ga_C1T806G4DF*czE3NTI3ODY5NDYkbzIkZzAkdDE3NTI3ODY5NDYkajYwJGwwJGgw",
+            },
+            {
+              date: "September 10",
+              location: "Baby's All Right @ New York, NY",
+              ticketsUrl:
+                "https://dice.fm/event/nvov6q-isaia-huron-10th-sep-babys-all-right-new-york-tickets?lng=en-US",
+            },
           ]}
         />
       </motion.section>
